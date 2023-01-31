@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Hello World.</h1>
+		<p>create a account to enhance your buisness</p>
+		<span>
+			<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="registor.html">Create Your Account</a> it takes less than a minute</p>
+		<div class="inputs">
+			<input type="text" id="username" placeholder="user name">
+			<br>
+			<input type="password" id="pass" placeholder="password">
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+	
+			<p>forget password?</p>
+		</div>
+			
+			<br>
+			<button type="submit" onclick="validate()">Login</button>
+	</div>
+	
+</div>
+  
+
+<!-- partial -->
+<script>
+	function validate(){
+		var username= document.getElementById("username").value
+		var pass= document.getElementById("pass").value
+		if (username=="susalabs" && pass=="123456789"){
+			alert("login successfully");
+			window.location.replace("compose.html");
+			return false;
+		}
+		else{
+			alert("login failed");
+		}
+	}
+</script>
+
+  
+</body>
+</html>
